@@ -243,3 +243,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/src/Aunoa.Web/wwwroot/app
+/src/Aunoa.Web/wwwroot/libs
+/src/Aunoa.Web/typings

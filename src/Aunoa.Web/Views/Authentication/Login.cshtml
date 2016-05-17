@@ -1,0 +1,17 @@
+﻿@model Aunoa.Web.Models.Authentication.Login
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Log in";
+}
+
+<div>
+    <form asp-controller="Authenticaiton" asp-action="Login" method="post">
+        <h4>Login to Aunoa</h4>
+        <label asp-for="Username"></label>
+        <input asp-for="Username"/>
+        <label asp-for="Password"></label>
+        <input asp-for="Password"/>
+        <button type="submit">Login</button>
+    </form>
+</div>
