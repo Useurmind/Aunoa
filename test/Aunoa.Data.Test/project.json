@@ -1,0 +1,18 @@
+﻿{
+    "version": "1.0.0-*",
+    "description": "Aunoa.Data.Test Class Library",
+    "authors": [ "Jochen" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+    "frameworks": {
+        "dnx461": {
+            
+        }
+    },
+    "dependencies": {
+        "FluentAssertions": "4.6.1",
+        "NUnit": "3.2.1",
+        "xunit": "2.2.0-beta1-build3239"
+    }
+}

@@ -8,9 +8,18 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D51770F5-6EE6-4F5A-B8EF-7FDF588BCCCC}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		StartMongoDB.cmd = StartMongoDB.cmd
 	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Aunoa.Web", "src\Aunoa.Web\Aunoa.Web.xproj", "{932BE86F-EC06-4819-9D9D-365A9F415C30}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Aunoa.Rest", "src\Aunoa.Rest\Aunoa.Rest.xproj", "{52CA7AA1-9B13-47F3-8A08-7725EE31B609}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Aunoa.Data", "src\Aunoa.Data\Aunoa.Data.xproj", "{5B763A64-C927-42F8-879B-8A7C975BFDC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7DA915B7-3AB3-4685-96A8-A7DA0D9E5C1A}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Aunoa.Data.Test", "test\Aunoa.Data.Test\Aunoa.Data.Test.xproj", "{77B29716-DDCC-4186-A633-722BC0970061}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,11 +31,26 @@ Global
 		{932BE86F-EC06-4819-9D9D-365A9F415C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{932BE86F-EC06-4819-9D9D-365A9F415C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{932BE86F-EC06-4819-9D9D-365A9F415C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CA7AA1-9B13-47F3-8A08-7725EE31B609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CA7AA1-9B13-47F3-8A08-7725EE31B609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CA7AA1-9B13-47F3-8A08-7725EE31B609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CA7AA1-9B13-47F3-8A08-7725EE31B609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B763A64-C927-42F8-879B-8A7C975BFDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B763A64-C927-42F8-879B-8A7C975BFDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B763A64-C927-42F8-879B-8A7C975BFDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B763A64-C927-42F8-879B-8A7C975BFDC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77B29716-DDCC-4186-A633-722BC0970061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B29716-DDCC-4186-A633-722BC0970061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B29716-DDCC-4186-A633-722BC0970061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B29716-DDCC-4186-A633-722BC0970061}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{932BE86F-EC06-4819-9D9D-365A9F415C30} = {714F34C3-FF90-4356-BAF6-B141BCAE9619}
+		{52CA7AA1-9B13-47F3-8A08-7725EE31B609} = {714F34C3-FF90-4356-BAF6-B141BCAE9619}
+		{5B763A64-C927-42F8-879B-8A7C975BFDC9} = {714F34C3-FF90-4356-BAF6-B141BCAE9619}
+		{77B29716-DDCC-4186-A633-722BC0970061} = {7DA915B7-3AB3-4685-96A8-A7DA0D9E5C1A}
 	EndGlobalSection
 EndGlobal

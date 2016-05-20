@@ -1,0 +1,16 @@
+﻿{
+    "version": "1.0.0-*",
+    "description": "Aunoa.Data Class Library",
+    "authors": [ "Jochen" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "frameworks": {
+        "net461": {
+            "dependencies": {
+                "MongoDB.Driver": "2.2.4"
+            }
+        }
+    }
+}
