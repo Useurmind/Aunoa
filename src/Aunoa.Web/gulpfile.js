@@ -20,6 +20,7 @@ gulp.task("scriptsNStyles", function () {
             "@angular/**",
             "jquery/dist/jquery.*js",
             "bootstrap/dist/js/bootstrap.*js"
+            //"linqjs/dist/linq.js"
     ], {
         cwd: "node_modules/**"
     }).pipe(gulp.dest("./wwwroot/libs"));

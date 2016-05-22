@@ -1,6 +1,7 @@
 ﻿import { Component } from "@angular/core";
 import { Pipeline } from "../../Model/Pipeline";
-import { PipelineConfigurationComponent } from "./PipelineConfiguration.component"
+import { PipelineConfigurationComponent } from "./PipelineConfiguration.component";
+import { PipelineService } from "../../Services/PipelineService";
 
 @Component({
     selector: "PipelinesOverview-Component",
@@ -10,10 +11,7 @@ import { PipelineConfigurationComponent } from "./PipelineConfiguration.componen
 export class PipelinesOverviewComponent {
     private Pipelines : Pipeline[];
 
-    constructor() {
-        this.Pipelines = [
-            { Id: "1", Name: "Pipeline1", Description: "This is my first pipeline" },
-            { Id: "2", Name: "Pipeline2", Description: "This is my second pipeline" }
-        ];
+    constructor(private pipelineService: PipelineService) {
+        this.Pipelines = this.pipelineService.GetPipelines();
     }
 }

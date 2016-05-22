@@ -1,6 +1,7 @@
 ﻿import { Component, Input } from "@angular/core";
 
 import { Pipeline } from "../../Model/Pipeline";
+import { PipelineService } from "../../Services/PipelineService";
 
 @Component({
     selector: "PipelineConfiguration-Component",
@@ -9,7 +10,7 @@ import { Pipeline } from "../../Model/Pipeline";
 export class PipelineConfigurationComponent {
     @Input() Pipeline : Pipeline;
 
-    constructor() {
+    constructor(private pipelineService: PipelineService) {
         
     }
 }

@@ -3,6 +3,7 @@
     var map = {
         "app": 'app', // 'dist',
         'rxjs': 'libs/rxjs',
+        'linqjs' : 'libs/linqjs/dist',
         'angular2-in-memory-web-api': 'libs/angular2-in-memory-web-api',
         '@angular': "libs/@angular"
     };
