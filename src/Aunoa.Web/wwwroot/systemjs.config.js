@@ -1,33 +1,34 @@
 ﻿(function (global) {
     // map tells the System loader where to look for things
     var map = {
-        "app": 'app', // 'dist',
-        'rxjs': 'libs/rxjs',
-        'linqjs' : 'libs/linqjs/dist',
-        'angular2-in-memory-web-api': 'libs/angular2-in-memory-web-api',
-        '@angular': "libs/@angular"
+        "app": "app", // 'dist',
+        "rxjs": "libs/rxjs",
+        "typescript-dotnet": "node_modules/typescript-dotnet",
+        "angular2-in-memory-web-api": "libs/angular2-in-memory-web-api",
+        "@angular": "libs/@angular"
     };
     // packages tells the System loader how to load when no filename and/or no extension
     var packages = {
-        'app': { main: 'main.js', defaultExtension: 'js' },
-        'rxjs': { defaultExtension: 'js' },
-        'angular2-in-memory-web-api': { defaultExtension: 'js' }
+        "app": { main: "main.js", defaultExtension: "js" },
+        "rxjs": { defaultExtension: "js" },
+        "angular2-in-memory-web-api": { defaultExtension: "js" },
+        "typescript-dotnet": { defaultExtension: "js" }
     };
     var packageNames = [
-      '@angular/common',
-      '@angular/compiler',
-      '@angular/core',
-      '@angular/http',
-      '@angular/platform-browser',
-      '@angular/platform-browser-dynamic',
-      '@angular/router',
-      '@angular/router-deprecated',
-      '@angular/testing',
-      '@angular/upgrade'
+      "@angular/common",
+      "@angular/compiler",
+      "@angular/core",
+      "@angular/http",
+      "@angular/platform-browser",
+      "@angular/platform-browser-dynamic",
+      "@angular/router",
+      "@angular/router-deprecated",
+      "@angular/testing",
+      "@angular/upgrade"
     ];
     // add package entries for angular packages in the form '@angular/common': { main: 'index.js', defaultExtension: 'js' }
     packageNames.forEach(function (pkgName) {
-        packages[pkgName] = { main: 'index.js', defaultExtension: 'js' };
+        packages[pkgName] = { main: "index.js", defaultExtension: "js" };
     });
     var config = {
         map: map,

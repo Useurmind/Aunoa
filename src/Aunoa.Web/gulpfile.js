@@ -19,8 +19,8 @@ gulp.task("scriptsNStyles", function () {
             "zone.js/dist/**",
             "@angular/**",
             "jquery/dist/jquery.*js",
-            "bootstrap/dist/js/bootstrap.*js"
-            //"linqjs/dist/linq.js"
+            "bootstrap/dist/js/bootstrap.*js",
+            "typescript-dotnet/dist/commonjs/**"
     ], {
         cwd: "node_modules/**"
     }).pipe(gulp.dest("./wwwroot/libs"));
@@ -28,6 +28,11 @@ gulp.task("scriptsNStyles", function () {
     gulp.src([
         "node_modules/bootstrap/dist/css/bootstrap.css"
     ]).pipe(gulp.dest("./wwwroot/libs/css"));
+
+    //gulp.src([
+    //        "node_modules/typescript-dotnet/source/**"
+    //    ])
+    //    .pipe(gulp.dest("./AppTS/External"));
 
     //gulp.src([
     //        "AppTS/**/*.js"

@@ -9,12 +9,13 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "target": "es5",
-        "outDir": "./wwwroot/app/"
+        "outDir": "./wwwroot/"
     },
     "exclude": [
         "node_modules",
         "typings/main",
         "typings/main.d.ts",
-        "wwwroot"
+        "wwwroot",
+        "external"
     ]
 }

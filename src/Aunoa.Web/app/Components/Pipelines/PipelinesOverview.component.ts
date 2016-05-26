@@ -6,7 +6,8 @@ import { PipelineService } from "../../Services/PipelineService";
 @Component({
     selector: "PipelinesOverview-Component",
     templateUrl: "templates/Pipelines/PipelinesOverview.component.html",
-    directives: [PipelineConfigurationComponent]
+    directives: [PipelineConfigurationComponent],
+    providers: [PipelineService]
 })
 export class PipelinesOverviewComponent {
     private Pipelines : Pipeline[];

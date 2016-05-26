@@ -1,8 +1,7 @@
 ﻿import { Injectable } from "@angular/core";
 import { Pipeline } from "../Model/Pipeline";
-//import { Enumerable } from "linq/";
+import { Enumerable } from "typescript-dotnet/source/System.Linq/Linq";
 
-@Injectable()
 export class PipelineService {
     private pipelines: Pipeline[];
 
@@ -18,7 +17,8 @@ export class PipelineService {
     }
 
     public GetPipeline(id: string): Pipeline {
-        return null;
-        //return Enumerable.From(this.pipelines).First(p => { return p.Id == id; });
+        var pipelineEnum = Enumerable.from<Pipeline>(this.pipelines);
+        
+        return pipelineEnum.where(p => p.Id == id).first();
     }
 }

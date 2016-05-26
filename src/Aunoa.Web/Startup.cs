@@ -56,9 +56,8 @@ namespace Aunoa.Web
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
 
-                routes.MapRoute(
+                routes.MapSpaFallbackRoute(
                     name: "angular",
-                    template: "{*url}",
                     defaults: new { controller = "Home", action = "index" });
             });
         }
