@@ -13,14 +13,14 @@ gulp.task("scriptsNStyles", function () {
     gulp.src([
             "es6-shim/es6-shim.min.js",
             "zone.js/dist/zone.js",
+            "guid/guid.js",
             "reflect-metadata/Reflect.js",
             "systemjs/dist/system.src.js",
             "rxjs/**",
             "zone.js/dist/**",
             "@angular/**",
             "jquery/dist/jquery.*js",
-            "bootstrap/dist/js/bootstrap.*js",
-            "typescript-dotnet/dist/commonjs/**"
+            "bootstrap/dist/js/bootstrap.*js"
     ], {
         cwd: "node_modules/**"
     }).pipe(gulp.dest("./wwwroot/libs"));

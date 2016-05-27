@@ -4,14 +4,18 @@ import { Pipeline } from "../../Model/Pipeline";
 import { PipelineService } from "../../Services/PipelineService";
 
 @Component({
-    selector: "PipelineConfiguration-Component",
-    templateUrl: "templates/Pipelines/PipelineConfiguration.component.html",
+    selector: "PipelineEdit-Component",
+    templateUrl: "templates/Pipelines/PipelineEdit.component.html",
     providers: [PipelineService]
 })
-export class PipelineConfigurationComponent {
+export class PipelineEditComponent {
     @Input() Pipeline : Pipeline;
 
     constructor(private pipelineService: PipelineService) {
+        this.Pipeline = new Pipeline();
+    }
+
+    public SavePipeline() {
         
     }
 }
